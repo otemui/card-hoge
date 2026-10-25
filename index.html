@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- スマホの画面サイズに最適化する設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ずとまよカード（仮）</title>
+  <link rel="stylesheet" href="style.css">
+  <!--
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #2c3e50;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .card {
+      width: 140px;
+      height: 200px;
+      background-color: #ffffff;
+      color: #333;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.2s;
+    }
+    .card:active {
+      transform: scale(0.95);
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+  </style>
+-->
+</head>
+<body>
+  <div class="game-board">
+    <div class="set-zone-Day-group">
+      <div class="left-side-group">
+        <div class="abyss">アビス</div>
+        <div class="power-chager">パワーチャージャー</div>
+      </div>
+      <div class="zone-card">A</div>
+      <div class="zone-card">B</div>
+      <div class="zone-card">C</div>
+      <div class="deck-zone">デッキゾーン</div>
+    </div>
+
+    <div class="hand-DAY-group">
+      <div class="hand">1</div>
+      <div class="hand">2</div>
+      <div class="hand">3</div>
+      <div class="hand">4</div>
+      <div class="hand">5</div>
+    </div>
+    
+    <div class="HP-meter-group DAY-HP">
+      <div class="medal" id="DAY_HP_medal"></div>
+      <dib class="HP-meter-group">
+        <div class="HP-meter">100</div>
+        <div class="HP-meter">90</div>
+        <div class="HP-meter">80</div>
+        <div class="HP-meter">70</div>
+        <div class="HP-meter">60</div>
+        <div class="HP-meter">50</div>
+        <div class="HP-meter">40</div>
+        <div class="HP-meter">30</div>
+        <div class="HP-meter">20</div>
+        <div class="HP-meter">10</div>
+        <div class="HP-meter">0</div>
+      </dib>
+    </div>
+
+    <div class="battle-zone-group">
+      <div class="battle-zone-DAY">バトルゾーン</div>
+
+      <div class="chronos-container">
+        <div class="medal" id="chronos_medal"></div>
+        
+        <div class="chronos chronos-000">夜</div>
+        <div class="chronos chronos-015"></div>
+        <div class="chronos chronos-025"></div>
+        <div class="chronos chronos-035"></div>
+        <div class="chronos chronos-045"></div>
+        <div class="chronos chronos-051"></div>
+        <div class="chronos chronos-061"></div>
+        <div class="chronos chronos-071"></div>
+        <div class="chronos chronos-081"></div>
+        <div class="chronos chronos-092">昼</div>
+        <div class="chronos chronos-101"></div>
+        <div class="chronos chronos-111"></div>
+        <div class="chronos chronos-121"></div>
+        <div class="chronos chronos-131"></div>
+        <div class="chronos chronos-145"></div>
+        <div class="chronos chronos-155"></div>
+        <div class="chronos chronos-165"></div>
+        <div class="chronos chronos-175"></div>
+      </div>
+
+      <div class="battle-zone-NIGHT">バトルゾーン</div>
+    </div>
+    
+    <div class="set-zone-Night-group">
+      <div class="left-side-group">
+        <div class="abyss">アビス</div>
+        <div class="power-chager">パワーチャージャー</div>
+      </div>
+      <div class="zone-card">A</div>
+      <div class="zone-card">B</div>
+      <div class="zone-card">C</div>
+      <div class="deck-zone">デッキゾーン</div>
+    </div>
+
+    <div class="hand-NIGHT-group">
+      <div class="hand">1</div>
+      <div class="hand">2</div>
+      <div class="hand">3</div>
+      <div class="hand">4</div>
+      <div class="hand">5</div>
+    </div>
+
+    <div class="HP-meter-group NIGHT-HP">
+      <div class="medal" id="NIGHT_HP_medal"></div>
+      <dib class="HP-meter-group">
+        <div class="HP-meter">100</div>
+        <div class="HP-meter">90</div>
+        <div class="HP-meter">80</div>
+        <div class="HP-meter">70</div>
+        <div class="HP-meter">60</div>
+        <div class="HP-meter">50</div>
+        <div class="HP-meter">40</div>
+        <div class="HP-meter">30</div>
+        <div class="HP-meter">20</div>
+        <div class="HP-meter">10</div>
+        <div class="HP-meter">0</div>
+      </dib>
+    </div>
+  </div>
+
+  <div class="card">
+
+  </div>
+
+
+
+    
+  <script src="card.JS"></script>
+  <script src="script.js"></script>
+</body>
+</html>
